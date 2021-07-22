@@ -1,5 +1,19 @@
 # Adelie GNU/Linux Terminal Assistant
 
+## Table of Content
+
+- [Adelie GNU/Linux Terminal Assistant](#adelie-gnulinux-terminal-assistant)
+  - [Table of Content](#table-of-content)
+  - [Introduction](#introduction)
+  - [Installation](#installation)
+  - [Using the Tool](#using-the-tool)
+    - [GNU Core Utilities](#gnu-core-utilities)
+    - [Network Tools](#network-tools)
+    - [Cron](#cron)
+  - [Docs Installation](#docs-installation)
+
+## Introduction
+
 Adelie is a tool created to provide support for novice Linux terminal users.
 It assists users by enabling them to execute different Linux commands through
 an easy to use and simple GUI. Adelie is  **not** a replacement for
@@ -13,6 +27,9 @@ networking commands, common adminstration commands, and Cron.
 | GNU Core Utilities | `cat`, `chmod`, and `ls`  (90+ commands) |
 | Network Tools      | Ping, ifconfig, iwconfig, and netstat    |
 | Schedulers         | Cron                                     |
+
+
+
 
 ## Installation
 
