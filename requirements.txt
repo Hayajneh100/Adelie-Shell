@@ -1,0 +1,4 @@
+PyQt5==5.14.1
+PyQt5-sip==12.8.1
+python-crontab==2.5.1
+
