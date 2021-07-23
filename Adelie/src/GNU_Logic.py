@@ -970,7 +970,6 @@ class GNU_Logic(baseUIWidget, baseUIClass):
         self.process1.start(tool1_name, command1)
 
         for item in self.cmd1:
-            print("ITEM " + str(item))
             if item == [" "]:
                 self.cmd1.remove(item)
 
