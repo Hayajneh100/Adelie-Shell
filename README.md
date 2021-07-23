@@ -10,7 +10,7 @@
     - [GNU Core Utilities](#gnu-core-utilities)
     - [Network Tools](#network-tools)
     - [Cron](#cron)
-  - [Docs Installation](#docs-installation)
+  - [Source Code Documentation](#source-code-documentation)
 
 ## Introduction
 
@@ -57,96 +57,46 @@ directly. Follow these steps:
 
 ## Using the Tool
 
-The following sections will go through simple use cases for the implemented
-commands.
-
-----
+Adelie displays common Linux command directly on its GUI. Then you can choose
+the commands you can choose the commands you would like to execute.
+Each time you execute a command, Adelie
+will display the command output and show you the __formed__ command. Adelie's
+goal is to let you choose your required options from a GUI and then it will
+show you the equivalent Linux command.
 
 ### GNU Core Utilities
 
-The GNU Core Utilities commands UI will display all the available commands, then
-the user can simply select the command to be executed.
+![GNU_GUI](/docs/readme_pics/GNU_GUI.gif)
 
-![GitHub Logo](/docs/readme_pics/GNU_GUI.png)
+Do not worry if you do not understand what the commands or options do! Adelie
+will help you by displaying ToolTips that explain the purpose of these
+commands.
 
-| Component | Title            | Purpose                                                  |
-| --------- | ---------------- | -------------------------------------------------------- |
-| 1         | Command List     | Displays and selects commands                            |
-| 2         | Command guide    | Informs users when commands have arguments or options    |
-| 3         | Options' List    | Displays and selects commands' options                   |
-| 4         | Arguments' Panel | Displays the arguments required for the commands         |
-| 5         | Output Terminal  | The output of the executed commands is displayed here    |
-| 6         | Command History  | Displays the history of executed commands                |
-| 7         | Command Tracker  | Tracks the selected commands and their options/arguments |
-
-Once the user hovers
-over any command, option, or arguments the tool will display a
-ToolTip extracted from the commands manpages. The ToolTip will describe
-the command's purpose or the meaning of the options or arguments. For example,
-for the commands displayed in the figure above the tool will show the
-following ToolTips
-
-| Option | ToolTip                                       |
-| ------ | --------------------------------------------- |
-| d      | Decode data                                   |
-| i      | When decoding, ignore non-alphabet characters |
-| w      | Wrap encoded lines after (cols) characters.   |
-
-----
+![GNU_GUI_ToolTip](/docs/readme_pics/GNU_ToolTip.gif)
 
 ### Network Tools
 
-Adelie implements four different network tools: ping, ifconfig, iwconfig,
-and netstat. Adelie reads the output of these network tools and formats it
-in an easy to read table. Users can click on the table cells to configure
-the interfaces shown in the figure below. Because Adelie is an educational tool,
-the reset button will reset the networking configurations to their default
-settings. Unlike the GNU Core Utilities UI, the networks tools implement
-specific common options and not all the options supported by the tools.
-The figure below is for **ifconfig** commands. Make sure to explore the
-rest of the commands!
+You can also do network configurations using common Linux commands like
+`ifconfig` or `iwconfig` using a simple and an easy to use GUI. 
+And Adelie will display the equivalent Linux command.
 
-![ifconfig_ui](/docs/readme_pics/ifconfig_UI.png)
-
-| Component | Title           | Purpose                                                 |
-| --------- | --------------- | ------------------------------------------------------- |
-| 1         | Output Table    | Used for executing commands and displaying their output |
-| 2         | Options Panel   | Check to select command's options                       |
-| 3         | Buttons Panel   | Execute commands and clear the terminal                 |
-| 4         | Command History | Displays the history of executed commands               |
-| 5         | Output Terminal | The output of the executed commands is displayed here   |
-| 6         | Cron Panel      | Schedule the command using Cron                         |
-
-----
+![Ifconfig_GUI](/docs/readme_pics/Ifconfig.gif)
 
 ### Cron
 
-Adelie enables users to schedule the network commands using an easy to use
-GUI for the famous **Cron** daemon. Simply put, it writes Crontabs. The user
-can simply select the required date from the calendar, choose time, or the
-*every* mask, and Adelie will display the Cron time format.
-Scheduling the network commands implemented in Adelie
-has no real use but to introduce users to Cron, Crontabs, and the Cron time
-format.
+Cron is a must know tool and its commands can be confusing sometimes.
+Using Adelie, you can schedule the network commands through an easy to use
+GUI. After you finish your configurations, Adelie will display the Cron time
+format and the equivalent commands used.
 
-![ifconfig_ui](/docs/readme_pics/crontime_selection.png)
+![cron](/docs/readme_pics/cron.gif)
 
-Follow these steps to schedule a command
+----
 
-1. Check all the options and fill the related data field.
-2. Check the **Enable CronTab** checkbox.
-3. Click on **CronTab Options** button.
-4. Select time and date.
-5. Save.
-6. Execute the command.
-
-Because Cron does not notify users if the command executed will cause an error,
-step 6 is **required** to write the equivalent crontab.
-
-## Docs Installation
+## Source Code Documentation
 
 Adelie's source code is documented and a sphinx generated documentation is
-available. To generate the HTML documentation, execute the following command.
+available. To generate the HTML documentation, execute the following commands.
 
 ```bash
 cd ./docs
