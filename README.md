@@ -14,7 +14,7 @@
 
 ## Introduction
 
-Adelie is a tool created to provide support for novice Linux terminal users.
+Adelie is a GNU/Linux terminal assistant. It is a tool created to provide support for novice Linux terminal users.
 It assists users by enabling them to execute different Linux commands through
 an easy to use and simple GUI. Adelie is  **not** a replacement for
 the esteemed shell, it is only a tool designed for introducing novice users
